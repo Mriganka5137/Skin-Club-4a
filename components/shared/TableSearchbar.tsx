@@ -8,10 +8,12 @@ const TableSearchbar = () => {
       <input
         type="text"
         placeholder="Search by patient name"
-        className="bg-transparent w-full h-full px-4  placeholder:text-xs text-color--4C4D4F opacity-50 placeholder:font-extralight  mobile:placeholder:text-[10px]"
+        className="bg-transparent w-full h-full px-4 placeholder:text-[10px] tablet:placeholder:text-[10px] text-color--4C4D4F opacity-50 placeholder:font-extralight  mobile:placeholder:text-[18px]"
       />
-      <Separator orientation="vertical" className="h-1/2 mr-2 stroke-2" />
-      <FaMagnifyingGlass className="mx-5 tablet:mx-3 text-color--4C4D4F opacity-50 size-3 mobile:size-8 tablet:size-3" />
+      <div className="flex gap-1 h-full items-center mx-2 ">
+        <Separator orientation="vertical" className="h-[60%] w-[1px]" />
+        <FaMagnifyingGlass className="mx-2 tablet:mx-3 text-color--4C4D4F opacity-50 size-3 mobile:size-8 tablet:size-3" />
+      </div>
     </div>
   );
 };

@@ -20,7 +20,7 @@ const ElementsContainer = () => {
       </h4>
       <div className="flex w-full justify-between items-center gap-5 mt-7">
         <TableSearchbar />
-        <GrClose />
+        <GrClose className="size-3 mobile:size-6 tablet:size-3" />
       </div>
       {/* Icons Grid */}
       <div className=" grid grid-cols-2 gap-x-4 gap-y-4 justify-items-center mt-10">
